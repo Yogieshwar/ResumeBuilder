@@ -1,12 +1,41 @@
-# React + Vite
+# 📝 Resume Builder Web App (MERN Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An advanced and responsive Resume Builder built using the MERN stack. Users can create professional resumes with live preview, customizable sections, drag-and-drop reordering, multiple elegant templates, and export options (PDF).
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 User Authentication (JWT-based)
+- ✍️ Live Resume Editing with Form
+- 🎨 Font and Color Customization
+- 📄 Multiple Professional Templates:
+  - Classic
+  - Modern
+  - Minimalist
+  - Elegant
+- 🧩 Drag-and-Drop Section Reordering
+- 📤 Export to PDF (via `html2canvas` + `jsPDF`)
+- 💾 Save Multiple Resumes to MongoDB
+- 📱 Fully Responsive Design for Mobile and Desktop
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:**
+- React.js
+- Redux Toolkit
+- Tailwind CSS
+- @hello-pangea/dnd
+- html2canvas & jsPDF
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JWT (Authentication)
+
+## 📦 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/resume-builder.git
+cd resume-builder
