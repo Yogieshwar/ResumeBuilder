@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.resume {
+    font-family: Arial, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-header {
+    background: #ffcc00; /* Yellow color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .background-image {
+    /* Placeholder for a background image */
+    height: 200px; /* Adjust height according to your image */
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .info-section h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .info-section h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+  }
+  
+  section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  h3 {
+    border-bottom: 2px solid #ffcc00; /* Yellow line under section headers */
+  }
+  
+  .education-item, .work-item, .reference-item {
+    margin: 10px 0;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  /* styles for home page */
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    padding: 20px;
+  }
+  
+  .welcome-card {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .welcome-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .welcome-card p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .welcome-card button {
+    padding: 12px 28px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .welcome-card button:hover {
+    background-color: #005fa3;
+  }
+  
+
+  /* styles for resume tabs */
+  .resume-layout {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .tab-sidebar {
+    width: 220px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .tab-sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .tab-sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tab-sidebar button.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  .resume-preview {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+  .resume-layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    background-color: #f9f9f9;
+  }
+  
+  .tab-sidebar {
+    width: 200px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .tab-sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .tab-sidebar button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tab-sidebar button.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #007bff;
+  }
+  
+  .resume-preview {
+    flex-grow: 1;
+    padding: 2rem;
+    overflow-x: auto;
+    background-color: #fafafa;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .resume-layout {
+      flex-direction: column;
+    }
+  
+    .tab-sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .tab-sidebar h3 {
+      display: none;
+    }
+  
+    .tab-sidebar button {
+      flex: 1;
+      margin: 0.25rem;
+      font-size: 0.9rem;
+      padding: 0.6rem 0.4rem;
+      border-radius: 0;
+    }
+  
+    .resume-preview {
+      padding: 1rem;
+    }
+  }
+  .resume-preview {
+    flex-grow: 1;
+    padding: 2rem;
+    overflow-x: auto;
+    background-color: #fafafa;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Resume container styling */
+  .resume-preview > div {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure sections don't overflow */
+  .resume-preview section {
+    padding: 0.5rem 0;
+  }
+  
+  /* Make headers and large text responsive */
+  .resume-preview h1,
+  .resume-preview h2,
+  .resume-preview h3 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Make text responsive */
+  .resume-preview p,
+  .resume-preview li {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    line-height: 1.5;
+  }
+  
+  /* Mobile-specific tweaks */
+  @media screen and (max-width: 768px) {
+    .resume-preview {
+      padding: 1rem;
+    }
+  
+    .resume-preview > div {
+      padding: 0.5rem;
+    }
+  
+    .resume-preview section {
+      padding: 0.5rem 0;
+    }
+  }
+  #resume-minimalist,
+#resume-elegant,
+#resume-modern,
+#resume-classic {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+  
+  

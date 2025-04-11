@@ -1,0 +1,128 @@
+
+
+.resume-elegant-wrapper {
+    padding: 20px;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-elegant {
+    background: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+  }
+  
+  .resume-elegant .header {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .resume-elegant .header h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .resume-elegant .header h2 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .resume-elegant .header p {
+    font-size: 13px;
+    color: #444;
+  }
+  
+  .resume-elegant section {
+    margin-bottom: 20px;
+  }
+  
+  .resume-elegant section h3 {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    color: #222;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .resume-elegant ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .resume-elegant p,
+  .resume-elegant li {
+    margin: 4px 0;
+  }
+  
+  .resume-elegant strong {
+    font-weight: bold;
+  }
+  
+  .resume-elegant em {
+    font-style: italic;
+  }
+  
+  /* For ExportButtons and FontAndColorControls */
+  .export-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  /* PDF-friendly */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .resume-elegant-wrapper {
+      padding: 0;
+      background: none;
+    }
+    .resume-elegant {
+      box-shadow: none;
+      width: auto;
+      max-width: none;
+      padding: 0;
+    }
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 600px) {
+    .resume-elegant {
+      padding: 15px;
+      font-size: 13px;
+    }
+  
+    .resume-elegant .header h1 {
+      font-size: 22px;
+    }
+  
+    .resume-elegant .header h2 {
+      font-size: 14px;
+    }
+  }
+  @media print {
+    .resume-section {
+      page-break-inside: avoid;
+    }
+  }
+  
+  #resume-content {
+    width: 794px; /* match A4 width for perfect fit */
+    padding: 20px;
+    background-color: white;
+  }
