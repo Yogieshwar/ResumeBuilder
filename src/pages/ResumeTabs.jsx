@@ -3,9 +3,11 @@ import ResumeClassic from "../resumes/ResumeClassic";
 import ResumeModern from "../resumes/ResumeModern";
 import ResumeMinimalist from "../resumes/ResumeMinimalist";
 import ResumeElegant from "../resumes/ResumeElegant";
-
+import { useNavigate } from "react-router-dom";
+import '../index.css'
 
 const ResumeTabs = () => {
+  const navigate =useNavigate();
   const [activeTab, setActiveTab] = useState("classic");
 
   const renderActiveResume = () => {
@@ -20,6 +22,10 @@ const ResumeTabs = () => {
         return <ResumeClassic />;
     }
   };
+  const handleClick=()=>{
+    navigate('/resumeform')
+
+  }
 
   return (
     <div className="resume-layout">
@@ -48,6 +54,9 @@ const ResumeTabs = () => {
           onClick={() => setActiveTab("elegant")}
         >
           Elegant
+        </button>
+        <button className="btn bg-blue-800" onClick={handleClick}>
+          Go Back 
         </button>
       </div>
 

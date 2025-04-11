@@ -139,13 +139,13 @@ const ResumeElegant = () => {
 
       <div
         ref={resumeref}
-        id="resume-content"
+        id="resume-elegant"
         className="resume-elegant"
         style={{ fontFamily: fontStyle, color }}
       >
         <header className="elegant-header">
           <h1>{personalInfo.name || "Your Name"}</h1>
-        
+          <h2>{personalInfo.title || "Professional Title"}</h2>
           <div className="contact-info">
             {personalInfo.email && <span>{personalInfo.email}</span>}
             {personalInfo.phone && <span>{personalInfo.phone}</span>}

@@ -135,7 +135,7 @@ const ResumeClassic = () => {
           <header className="resume-header">
             <div className="left-panel">
               <h1>{personalInfo.name || "Your Name"}</h1>
-              <h2>{personalInfo.title || "Professional Title"}</h2>
+              
             </div>
             <div className="right-panel">
               <h3>Contact</h3>
